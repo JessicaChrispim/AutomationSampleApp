@@ -1,13 +1,13 @@
 package Tools;
 
-import java.io.File;
-import java.io.IOException;
-
 import PageObjects.*;
-import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 public class BaseTest {
 
@@ -47,12 +47,6 @@ public class BaseTest {
         }
 
         File file = ((TakesScreenshot) webdriver).getScreenshotAs(OutputType.FILE);
-
-        try {
-            FileUtils.copyFile(file, new File("target/Screenshot/" + Scenario + ".jpg"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
     }
 //endregion
