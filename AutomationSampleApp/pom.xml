@@ -52,7 +52,7 @@
 						</goals>
 						<configuration>
 							<sources>
-								<source>src/acceptance/java</source>
+								<source>src/test/java/Runners</source>
 							</sources>
 						</configuration>
 					</execution>
@@ -65,7 +65,7 @@
 						<configuration>
 							<resources>
 								<resource>
-									<directory>src/acceptance/resources</directory>
+									<directory>src/test/resources</directory>
 								</resource>
 							</resources>
 						</configuration>
@@ -88,7 +88,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>${maven-surefire-plugin.version}</version>
 						<configuration>
-							<testSourceDirectory>src/test/java</testSourceDirectory>
+							<testSourceDirectory>src/test/java/Runners</testSourceDirectory>
 							<includes>
 								<include>Runner.java</include>
 							</includes>
