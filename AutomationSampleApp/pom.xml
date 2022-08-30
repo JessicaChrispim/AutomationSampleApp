@@ -54,7 +54,7 @@
 						</goals>
 						<configuration>
 							<sources>
-								<source>src/test/java/Runners</source>
+								<source>src/test/java</source>
 							</sources>
 						</configuration>
 					</execution>
@@ -90,9 +90,31 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>${maven-surefire-plugin.version}</version>
 						<configuration>
-							<testSourceDirectory>src/test/java/Runners</testSourceDirectory>
+							<testSourceDirectory>src/test/java</testSourceDirectory>
 							<includes>
 								<include>Runner.java</include>
+							</includes>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>regression-test</id>
+			<properties>
+				<cucumber.features>src/acceptance/resources/com/accenture/vale/gpvpv2/e2e/feature/VisualizarMovimento.feature,src/acceptance/resources/com/accenture/vale/gpvpv2/e2e/feature/CadastroMovimentoEmbarque.feature</cucumber.features>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>${maven-surefire-plugin.version}</version>
+						<configuration>
+							<testSourceDirectory>src/acceptance/java</testSourceDirectory>
+							<includes>
+								<include>CucumberRunner.java</include>
 							</includes>
 						</configuration>
 					</plugin>
