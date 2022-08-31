@@ -2,6 +2,7 @@
 
 Funcionalidade: Como usuario eu quero preencher e enviar os formularios do Automobile e por fim receber a mensagem de sucesso
 
+  @yes
   Cenario: Preencher e enviar os formularios do Automobile para entao validar a mensagem de sucesso
     Dado que estou no site Sample App
     Quando Preencho o formulario da aba enter Vehicle Data
@@ -16,6 +17,7 @@ Funcionalidade: Como usuario eu quero preencher e enviar os formularios do Autom
     E clico em Send da aba Select Send Quote
     Entao e exibido a mensagem "Sending e-mail success!"
 
+  @no
   Cenario: Validar mensagem de sucesso ao enviar formulario diretamente
     Dado que estou no site Sample App
     Quando Preencho as abas de formularios
