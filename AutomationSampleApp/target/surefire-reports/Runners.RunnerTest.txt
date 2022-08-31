@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: Runners.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 72.75 sec <<< FAILURE!
+Preencher e enviar os formularios do Automobile para entao validar a mensagem de sucesso(Como usuario eu quero preencher e enviar os formularios do Automobile e por fim receber a mensagem de sucesso)  Time elapsed: 39.001 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //input[@id='selectsilver']/../span (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CPX-VQI6RIF19M6', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\JESSIC~1.COR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ec458f522d9540bb5711174c6b281df
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Tools.BasePage.Wait(BasePage.java:16)
+	at PageObjects.PageObjectElementsSelectPriceOption.RadioButtonSilver(PageObjectElementsSelectPriceOption.java:12)
+	at PageObjects.PageObjectElementsSelectPriceOption.FillsTheFormOfTheTabSelectPriceOption(PageObjectElementsSelectPriceOption.java:26)
+	at Steps.SubmitSampleAppForm.FillTheFormOfTheTabSelectPriceOption(SubmitSampleAppForm.java:67)
+	at ?.preencho o formulario da aba Select Price Option(file:///C:/AutomationSampleApp/AutomationSampleApp/src/test/resources/features/SubmitSampleAppForm.feature:13)
+
+Validar mensagem de sucesso ao enviar formulario diretamente(Como usuario eu quero preencher e enviar os formularios do Automobile e por fim receber a mensagem de sucesso)  Time elapsed: 33.338 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //input[@id='selectsilver']/../span (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CPX-VQI6RIF19M6', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\JESSIC~1.COR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ad502d3b636ff72df21c85d53a259f53
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Tools.BasePage.Wait(BasePage.java:16)
+	at PageObjects.PageObjectElementsSelectPriceOption.RadioButtonSilver(PageObjectElementsSelectPriceOption.java:12)
+	at PageObjects.PageObjectElementsSelectPriceOption.FillsTheFormOfTheTabSelectPriceOption(PageObjectElementsSelectPriceOption.java:26)
+	at Steps.SubmitSampleAppForm.FillTheFormsTabs(SubmitSampleAppForm.java:93)
+	at ?.Preencho as abas de formularios(file:///C:/AutomationSampleApp/AutomationSampleApp/src/test/resources/features/SubmitSampleAppForm.feature:21)
+

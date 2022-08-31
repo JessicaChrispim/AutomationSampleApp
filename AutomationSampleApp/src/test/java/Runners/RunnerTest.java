@@ -10,9 +10,10 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 glue = "Steps",
 plugin = "pretty",
 monochrome = true,
+strict = true,
 snippets = SnippetType.CAMELCASE,
 dryRun = false,
 features = "src/test/resources/features/SubmitSampleAppForm.feature")
-public class Runner {
+public class RunnerTest {
 
 }

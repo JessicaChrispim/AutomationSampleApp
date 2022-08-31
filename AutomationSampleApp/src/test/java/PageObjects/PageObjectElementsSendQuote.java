@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import Tools.BasePage;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.beans.Visibility;
 
 public class PageObjectElementsSendQuote extends BasePage {
 
@@ -49,7 +52,8 @@ public class PageObjectElementsSendQuote extends BasePage {
 	//region Texts || Method
 
 	public String GetTextSuccessfullModal() {
-		Wait(By.xpath("//button[@class='confirm']"));
+		Wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("LoadingPDF")));
+		Wait.until(ExpectedConditions.visibilityOfElementLocated(ElementGetTextSuccessfullModal));
 		return GetDriver().findElement(ElementGetTextSuccessfullModal).getText();
 	}
 

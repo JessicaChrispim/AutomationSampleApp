@@ -87,7 +87,7 @@ public class PageObjectElementsEnterInsurantData extends BasePage {
         ButtonStepEnterInsurantData().click();
         InputFirstName().sendKeys("Qualidade");
         InputLastName().sendKeys("Automacao");
-        InputDateOfBirth().sendKeys("29/01/1999");
+        InputDateOfBirth().sendKeys("01/29/1999");
         RadioButtonGenderMale().click();
         InputStreetAddress().sendKeys("Rua de Qualidade");
         ComboCoutry().selectByVisibleText("Andorra");

@@ -1,7 +1,7 @@
 Tools\DriverFactory.class
 PageObjects\PageObjectElementsSendQuote.class
+Runners\RunnerTest.class
 Steps\SubmitSampleAppForm.class
-Runners\Runner.class
 PageObjects\PageObjectElementsEnterProductData.class
 Tools\BaseTest.class
 PageObjects\PageObjectElementsSelectPriceOption.class

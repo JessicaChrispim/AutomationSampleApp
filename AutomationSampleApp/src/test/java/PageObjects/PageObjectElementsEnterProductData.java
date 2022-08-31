@@ -49,7 +49,7 @@ public class PageObjectElementsEnterProductData extends BasePage {
     //region Texts || Methods
 
     public void FillsTheFormOfTheTabDateEnterProduct() {
-        InputStartDate().sendKeys("01/01/2022");
+        InputStartDate().sendKeys("01/01/2023");
         ComboInsuranceSum().selectByVisibleText("3.000.000,00");
         ComboMeritRating().selectByVisibleText("Malus 16");
         ComboDamageInsurance().selectByVisibleText("No Coverage");
