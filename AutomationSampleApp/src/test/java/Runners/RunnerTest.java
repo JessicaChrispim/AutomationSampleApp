@@ -8,6 +8,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 glue = "Steps",
+tags = "@yes",
 monochrome = true,
 strict = true,
 snippets = SnippetType.CAMELCASE,
