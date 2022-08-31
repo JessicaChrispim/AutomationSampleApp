@@ -19,4 +19,4 @@ Funcionalidade: Como usuario eu quero preencher e enviar os formularios do Autom
   Cenario: Validar mensagem de sucesso ao enviar formulario diretamente
     Dado que estou no site Sample App
     Quando Preencho as abas de formularios
-    Entao e exibido a mensagem "Sending e-mail!"
+    Entao e exibido a mensagem "Sending e-mail success!"
