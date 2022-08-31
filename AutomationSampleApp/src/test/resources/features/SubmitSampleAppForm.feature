@@ -17,7 +17,7 @@ Funcionalidade: Como usuario eu quero preencher e enviar os formularios do Autom
     E clico em Send da aba Select Send Quote
     Entao e exibido a mensagem "Sending e-mail success!"
 
-  @no
+  @nope
   Cenario: Validar mensagem de sucesso ao enviar formulario diretamente
     Dado que estou no site Sample App
     Quando Preencho as abas de formularios
